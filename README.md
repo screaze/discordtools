@@ -9,3 +9,5 @@
 # Installation:
 - pip install -r zavisimosti .txt
 - Start main.py to use.
+# Warning!
+- I do not assign myself parts of the code from my project, among the code there are projects of other programmers, whom I very much thank for the code, please do not complain about my repository.
