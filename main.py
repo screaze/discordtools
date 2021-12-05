@@ -1,7 +1,7 @@
 import os, random, pyfiglet
 logo = pyfiglet.figlet_format("Screaze Tools")
 print(logo)
-print("[$] Screaze Tools v1.5 by @blackscreaze")
+print("[$] Screaze Tools v0.1 by @blackscreaze")
 print("[1] Webhook Discord Spam")
 print("[2] Discord token checker")
 print("[3] Discord Nitro Gen/Checker")
