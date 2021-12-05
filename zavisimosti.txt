@@ -1,0 +1,6 @@
+beautifulsoup4
+selenium
+pillow
+lxml
+requests
+discord_webhook
