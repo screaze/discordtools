@@ -6,3 +6,6 @@
 - Token generator
 - Discord nitro gen/check
 - Discor token checker
+# Installation:
+- pip install -r zavisimosti .txt
+- Start main.py to use.
