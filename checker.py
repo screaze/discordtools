@@ -1,6 +1,9 @@
 from requests import get, post
 from random import randint
 import pyfiglet
+alaala = 0
+alaala2 = 0
+alaala3 = 0
 banner = pyfiglet.figlet_format("DTC")
 print(banner)
 print("[$] Discord Token Checker by @blackscreaze")
@@ -12,6 +15,7 @@ def variant1(token):
 def variant2(token):
     response = post(f'https://discord.com/api/v6/invite/{randint(1,9999999)}', headers={'Authorization': token})
     if "You need to verify your account in order to perform this action." in str(response.content) or "401: Unauthorized" in str(response.content):
+        alaala3 = alaala3+1
         return False
     else:
         return True
@@ -32,9 +36,11 @@ if __name__ == "__main__":
             for token in tokens.read().split('\n'):
                 if len(token) > 15 and token not in checked and variant2(token) == True:
                     print(f'[!] Token: {token} valid!')
+                    alaala = alaala+1
                     checked.append(token)
                 else:
                     print(f'[!] Token: {token} invalid!')
+                    alaala2 = alaala2+1
         if len(checked) > 0:
             save = input(f'{len(checked)} valid tokens! \n[!] Save to file? (y/n)').lower()
             if save == 'y':
@@ -43,5 +49,9 @@ if __name__ == "__main__":
                     saveFile.write('\n'.join(checked))
                 print(f'[!] Tokens save in {name}.txt!')
         input('[$] Press enter.')
+        print("[?] Statistic:")
+        print("[!] Valid: {alaala}")
+        print("[!] Invalid: {alaala2}")
+        print("[!] Not Verified: {alaala3}")
     except:
         input('[!] I can`t open file "tokens.txt"! Press enter!')
