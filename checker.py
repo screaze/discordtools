@@ -55,3 +55,4 @@ if __name__ == "__main__":
         print("[!] Not Verified: {alaala3}")
     except:
         input('[!] I can`t open file "tokens.txt"! Press enter!')
+# End of code
