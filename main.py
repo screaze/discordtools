@@ -8,7 +8,6 @@ print("[3] Discord Nitro Gen/Checker")
 print("[4] Discord QR Code Token Grabber")
 print("[5] Credits")
 print("[6] Discord Token Generator")
-print("[7] Spotify Account Generator")
 print("[X] Exit")
 blackscreaze = input("[?] Choose option > ")
 if blackscreaze == "1":
@@ -40,7 +39,3 @@ if blackscreaze == "X":
 if blackscreaze == "6":
 	os.system("clear")
 	os.system("python tokengen.py")
-
-if blackscreaze == "7":
-	os.system("clear")
-	os.system("python spotifygen.py")
