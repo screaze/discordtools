@@ -1,7 +1,6 @@
 # Discord Tools v0.1
 # Functions:
 - WebHook spamer
-- Spotify account generator (What?)
 - QR Code Token stealer
 - Token generator
 - Discord nitro gen/check
